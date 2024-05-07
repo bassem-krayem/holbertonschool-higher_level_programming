@@ -69,8 +69,8 @@ Complete this source code to print the integer stored in the variable `number`, 
 
 ##### Example:
 
-$ ./3-print_number.py
-98 Battery street
+$ ./3-print_number.py\
+98 Battery street\
 
 ### 2. Print float
 
@@ -85,8 +85,8 @@ Complete the source code to print the float stored in the variable `number` with
 
 ##### Example:
 
-$ ./4-print_float.py
-Float: 3.14
+$ ./4-print_float.py\
+Float: 3.14\
 
 ### 3. Print string
 
@@ -101,9 +101,9 @@ Complete this source code to print 3 times a string stored in the variable `str`
 
 ##### Example:
 
-$ ./5-print_string.py
-Holberton SchoolHolberton SchoolHolberton School
-Holberton
+$ ./5-print_string.py\
+Holberton SchoolHolberton SchoolHolberton School\
+Holberton\
 
 ### 4. Play with strings
 
@@ -119,8 +119,8 @@ Complete this source code to print "Welcome to Holberton School!".
 
 ##### Example:
 
-$ ./6-concat.py
-Welcome to Holberton School!
+$ ./6-concat.py\
+Welcome to Holberton School!\
 
 ### 5. Copy - Cut - Paste
 
@@ -137,10 +137,10 @@ Complete this source code to print various manipulations of the variable `word`.
 
 ##### Example:
 
-$ ./7-edges.py
-First 3 letters: Hol
-Last 2 letters: on
-Middle word: olberto
+$ ./7-edges.py\
+First 3 letters: Hol\
+Last 2 letters: on\
+Middle word: olberto\
 
 ### 6. Create a new sentence
 
@@ -157,8 +157,8 @@ Complete this source code to print "object-oriented programming with Python", fo
 
 ##### Example:
 
-$ ./8-concat_edges.py
-object-oriented programming with Python
+$ ./8-concat_edges.py\
+object-oriented programming with Python\
 
 ### 7. Easter Egg
 
@@ -172,8 +172,8 @@ Write a Python script that prints "The Zen of Python", by Tim Peters, followed b
 
 ##### Example:
 
-$ ./9-easter*egg.py\
-The Zen of Python, by Tim Peters\
+$ ./9-easter*egg.py\\
+The Zen of Python, by Tim Peters:\
 Beautiful is better than ugly.\
 Explicit is better than implicit.\
 Simple is better than complex.\
