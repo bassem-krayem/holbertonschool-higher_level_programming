@@ -37,3 +37,125 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - Your code should use the pycodestyle (version 2.7.\_)
 - All your files must be executable
 - The length of your files will be tested using wc.
+
+## Mandatory tasks:
+
+### 0. Hello, print
+
+#### Description:
+
+Write a Python script that prints exactly "Programming is like building a multilingual puzzle", followed by a new line.
+
+#### Instructions:
+
+- Use the `print` function.
+
+##### Example:
+
+$ ./2-print.py
+"Programming is like building a multilingual puzzle
+
+### 1. Print integer
+
+#### Description:
+
+Complete this source code to print the integer stored in the variable `number`, followed by "Battery street", followed by a new line.
+
+#### Instructions:
+
+- You are not allowed to cast the variable `number` into a string.
+- Your code must be 3 lines long.
+- You have to use f-strings.
+
+##### Example:
+
+$ ./3-print_number.py
+98 Battery street
+
+### 2. Print float
+
+#### Description:
+
+Complete the source code to print the float stored in the variable `number` with a precision of 2 digits.
+
+#### Instructions:
+
+- You are not allowed to cast `number` to string.
+- You have to use f-strings.
+
+##### Example:
+
+$ ./4-print_float.py
+Float: 3.14
+
+### 3. Print string
+
+#### Description:
+
+Complete this source code to print 3 times a string stored in the variable `str`, followed by its first 9 characters.
+
+#### Instructions:
+
+- You are not allowed to use any loops or conditional statement.
+- Your program should be maximum 5 lines long.
+
+##### Example:
+
+$ ./5-print_string.py
+Holberton SchoolHolberton SchoolHolberton School
+Holberton
+
+### 4. Play with strings
+
+#### Description:
+
+Complete this source code to print "Welcome to Holberton School!".
+
+#### Instructions:
+
+- You are not allowed to use any loops or conditional statements.
+- You have to use the variables `str1` and `str2` in your new line of code.
+- Your program should be exactly 5 lines long.
+
+##### Example:
+
+$ ./6-concat.py
+Welcome to Holberton School! 5. Copy - Cut - Paste
+Description:
+Complete this source code to print various manipulations of the variable `word`.
+Instructions:
+• You are not allowed to use any loops or conditional statements.
+• Your program should be exactly 8 lines long.
+• `word_first_3` should contain the first 3 letters of `word`.
+• `word_last_2` should contain the last 2 letters of `word`.
+• `middle_word` should contain `word` without the first and last letters.
+Example:
+yaml
+Copy code
+$ ./7-edges.py
+First 3 letters: Hol
+Last 2 letters: on
+Middle word: olberto 6. Create a new sentence
+Description:
+Complete this source code to print "object-oriented programming with Python", followed by a new line.
+Instructions:
+• You are not allowed to use any loops or conditional statements.
+• Your program should be exactly 5 lines long.
+• You are not allowed to create new variables.
+• You are not allowed to use string literals.
+Example:
+csharp
+Copy code
+$ ./8-concat_edges.py
+object-oriented programming with Python 7. Easter Egg
+Description:
+Write a Python script that prints "The Zen of Python", by Tim Peters, followed by a new line.
+Instructions:
+• Your script should be maximum 98 characters long.
+Example:
+csharp
+Copy code
+$ ./9-easter_egg.py
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
