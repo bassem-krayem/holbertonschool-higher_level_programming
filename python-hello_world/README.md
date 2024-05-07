@@ -120,42 +120,78 @@ Complete this source code to print "Welcome to Holberton School!".
 ##### Example:
 
 $ ./6-concat.py
-Welcome to Holberton School! 5. Copy - Cut - Paste
-Description:
+Welcome to Holberton School!
+
+### 5. Copy - Cut - Paste
+
+#### Description:
+
 Complete this source code to print various manipulations of the variable `word`.
-Instructions:
-• You are not allowed to use any loops or conditional statements.
-• Your program should be exactly 8 lines long.
-• `word_first_3` should contain the first 3 letters of `word`.
-• `word_last_2` should contain the last 2 letters of `word`.
-• `middle_word` should contain `word` without the first and last letters.
-Example:
-yaml
-Copy code
+####Instructions:
+
+- You are not allowed to use any loops or conditional statements.
+- Your program should be exactly 8 lines long.
+- `word_first_3` should contain the first 3 letters of `word`.
+- `word_last_2` should contain the last 2 letters of `word`.
+- `middle_word` should contain `word` without the first and last letters.
+
+##### Example:
+
 $ ./7-edges.py
 First 3 letters: Hol
 Last 2 letters: on
-Middle word: olberto 6. Create a new sentence
-Description:
+Middle word: olberto
+
+### 6. Create a new sentence
+
+#### Description:
+
 Complete this source code to print "object-oriented programming with Python", followed by a new line.
-Instructions:
-• You are not allowed to use any loops or conditional statements.
-• Your program should be exactly 5 lines long.
-• You are not allowed to create new variables.
-• You are not allowed to use string literals.
-Example:
-csharp
-Copy code
+
+#### Instructions:
+
+- You are not allowed to use any loops or conditional statements.
+- Your program should be exactly 5 lines long.
+- You are not allowed to create new variables.
+- You are not allowed to use string literals.
+
+##### Example:
+
 $ ./8-concat_edges.py
-object-oriented programming with Python 7. Easter Egg
-Description:
+object-oriented programming with Python
+
+### 7. Easter Egg
+
+#### Description:
+
 Write a Python script that prints "The Zen of Python", by Tim Peters, followed by a new line.
-Instructions:
-• Your script should be maximum 98 characters long.
-Example:
-csharp
-Copy code
+
+#### Instructions:
+
+- Your script should be maximum 98 characters long.
+
+##### Example:
+
 $ ./9-easter_egg.py
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than _right_ now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
