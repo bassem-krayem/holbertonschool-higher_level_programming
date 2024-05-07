@@ -172,9 +172,8 @@ Write a Python script that prints "The Zen of Python", by Tim Peters, followed b
 
 ##### Example:
 
-$ ./9-easter*egg.py
-The Zen of Python, by Tim Peters
-\
+$ ./9-easter*egg.py\
+The Zen of Python, by Tim Peters\\
 Beautiful is better than ugly.\
 Explicit is better than implicit.\
 Simple is better than complex.\
