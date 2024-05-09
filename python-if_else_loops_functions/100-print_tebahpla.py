@@ -4,4 +4,4 @@ for x in range(ord('z'), ord('a') - 1, - 1):
     if x % 2 != 0:
         lettre  = chr(x - 32)
 
-    print("{}".format(l), end="")
+    print("{}".format(lettre), end="")
