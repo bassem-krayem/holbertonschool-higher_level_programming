@@ -111,7 +111,9 @@ abcdefghijklmnopqrstuvwxyz
 
 ### 3. When I was having that alphabet soup, I never thought that it would pay off
 
-#### Description: Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line, excluding the letters 'q' and 'e'.
+#### Description:
+
+Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line, excluding the letters 'q' and 'e'.
 
 #### Instructions:
 
@@ -151,7 +153,9 @@ $ ./4-print_hexa.py\
 
 ### 5. 00...99
 
-#### Description: Write a program that prints numbers from 0 to 99.
+#### Description:
+
+Write a program that prints numbers from 0 to 99.
 
 #### Instructions:
 
@@ -194,7 +198,9 @@ $ ./6-print_comb3.py\
 
 ### 7. islower
 
-#### Description: Write a function that checks for a lowercase character.
+#### Description:
+
+Write a function that checks for a lowercase character.
 
 #### Instructions:
 
@@ -254,7 +260,9 @@ BEST SCHOOL 98 BATTERY STREET
 
 ### 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
 
-#### Description: Write a function that prints the last digit of a number.
+#### Description:
+
+Write a function that prints the last digit of a number.
 
 #### Instructions:
 
