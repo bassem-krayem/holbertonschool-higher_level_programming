@@ -372,3 +372,52 @@ print("")\
 
 $ ./12-main.py | cat -e\
 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz \Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz 31 32 Fizz 34 Buzz Fizz 37 38 \Fizz Buzz 41 Fizz 43 44 FizzBuzz 46 47 Fizz 49 Buzz Fizz 52 53 Fizz Buzz 56 \Fizz 58 59 FizzBuzz 61 62 Fizz 64 Buzz Fizz 67 68 Fizz Buzz 71 Fizz 73 74 FizzBuzz 76 77 Fizz 79 Buzz Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 \Fizz 94 Buzz Fizz 97 98 Fizz Buzz \
+
+### 13. Smile in the Mirror
+
+#### Description:
+
+Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase), not followed by a new line.
+
+#### Instructions:
+
+- You can only use one print function with string format.
+- You can only use one loop in your code.
+- You are not allowed to store characters in a variable.
+- You are not allowed to import any module.
+
+##### Example:
+
+$ ./100-print_tebahpla.py\
+zYxWvUtSrQpOnMlKjIhGfEdCbA
+
+### 14. Remove at Position
+
+#### Description:
+
+Write a function that creates a copy of the string, removing the character at the position n (not the Python way, the "C array index").
+
+#### Instructions:
+
+- You are not allowed to import any module.
+- Prototype: `def remove_char_at(str, n):`
+- You don’t need to understand `__import__`.
+
+##### Example:
+
+$ cat 101-main.py\
+#!/usr/bin/env python3\
+remove_char_at = **import**('101-remove_char_at').remove_char_at\
+
+print(remove_char_at("Best School", 3))\\
+print(remove_char_at("Chicago", 2))\
+print(remove_char_at("C is fun!", 0))\
+print(remove_char_at("School", 10))\
+print(remove_char_at("Python", -2))\
+
+$ ./101-main.py\
+Bes School\
+Chcago
+is fun!\
+School\
+Python
