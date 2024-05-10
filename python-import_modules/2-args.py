@@ -7,7 +7,7 @@ def arguments():
     if num_args == 0:
         print("0 arguments")
     else:
-        print(f"{num_args} argument")
+        print(f"{num_args} argument:")
 
     for x in range(1, len(args)):
         print(f"{x}: {args[x]}")
