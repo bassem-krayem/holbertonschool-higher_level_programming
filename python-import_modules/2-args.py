@@ -5,7 +5,7 @@ def arguments():
     args = sys.argv
     num_args = len(args) - 1
     if num_args == 0:
-        print("0 argument")
+        print("0 arguments.")
     elif num_args == 1:
         print("1 argument:")
     else:
