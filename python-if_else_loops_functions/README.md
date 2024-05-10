@@ -42,7 +42,9 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 ### 0. Positive anything is better than negative nothing
 
-#### Description: This program will assign a random signed number to the variable `number` each time it is executed. Complete the source code in order to print whether the number stored in the variable `number` is positive or negative.
+#### Description:
+
+This program will assign a random signed number to the variable `number` each time it is executed. Complete the source code in order to print whether the number stored in the variable `number` is positive or negative.
 
 #### Instructions:
 
@@ -66,7 +68,9 @@ $ ./0-positive_or_negative.py \
 
 ### 1. The last digit
 
-#### Description: This program will assign a random signed number to the variable `number` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `number`.
+#### Description:
+
+This program will assign a random signed number to the variable `number` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `number`.
 
 #### Instructions:
 
@@ -89,7 +93,9 @@ Last digit of -626 is -6 and is less than 6 and not 0
 
 ### 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 
-#### Description: Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+#### Description:
+
+Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 
 #### Instructions:
 
@@ -122,7 +128,9 @@ abcdfghijklmnoprstuvwxyz
 
 ### 4. Hexadecimal printing
 
-#### Description: Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal.
+#### Description:
+
+Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal.
 
 #### Instructions:
 
@@ -162,7 +170,9 @@ $ ./5-print_comb2.py\
 
 ### 6. Brains and Materials
 
-#### Description: Write a program that prints all possible different combinations of two digits.
+#### Description:
+
+Write a program that prints all possible different combinations of two digits.
 
 #### Instructions:
 
@@ -216,7 +226,9 @@ g is lower
 
 ### 8. To uppercase
 
-#### Description: Write a function that prints a string in uppercase followed by a new line.
+#### Description:
+
+Write a function that prints a string in uppercase followed by a new line.
 
 #### Instructions:
 
