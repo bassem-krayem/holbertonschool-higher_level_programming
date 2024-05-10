@@ -13,5 +13,7 @@ def arguments():
     for x in range(1, len(args)):
         print(f"{x}: {args[x]}")
 
+if __name__ == "__main__":
+    arguments()
 
 arguments()
