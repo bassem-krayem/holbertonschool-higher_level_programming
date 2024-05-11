@@ -10,7 +10,7 @@ def main():
     operator = sys.argv[2]
     b = int(sys.argv[3])
 
-    calculator_code = open('calculator.py').read()
+    calculator_code = open('calculator_1.py').read()
     calculator_locals = {}
     exec(calculator_code, {}, calculator_locals)
 
@@ -32,7 +32,6 @@ def main():
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
-
 
 if __name__ == "__main__":
     import sys  # Import sys only when script is executed
