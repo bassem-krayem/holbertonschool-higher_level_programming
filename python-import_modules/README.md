@@ -224,4 +224,5 @@ Unknown operator. Available operators: +, -, \* and /
 
 </details>
 
-</details>
+<details>
+<summary>
