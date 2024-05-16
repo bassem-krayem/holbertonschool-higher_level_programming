@@ -192,37 +192,28 @@ guillaume@ubuntu:~$ ./5-variable_load.py
 
 <details>
 <summary>6. Build my own calculator! (Advanced)</summary>
-
-**Description:**
-Write a program that imports all functions from the file `calculator_1.py` and handles basic operations.
-
-**Instructions:**
-
-- Usage: `./100-my_calculator.py a operator b`
-  - If the number of arguments is not 3, your program has to:
-    - Print `Usage: ./100-my_calculator.py <a> <operator> <b>` followed by a new line
-    - Exit with the value 1
-  - `operator` can be:
-    - `+` for addition
-    - `-` for subtraction
-    - `*` for multiplication
-    - `/` for division
-  - If the operator is not one of the above:
-    - Print `Unknown operator. Available operators: +, -, * and /` followed by a new line
-    - Exit with the value 1
-  - You can cast `a` and `b` into integers by using `int()` (you can assume that all arguments will be castable into integers)
-  - The result should be printed like this: `<a> <operator> <b> = <result>`, followed by a new line
-
-**Example:**
-
-guillaume@ubuntu:~$ ./100-my_calculator.py\
-Usage: ./100-my_calculator.py <a> <operator> <b>\
-guillaume@ubuntu:~$ ./100-my_calculator.py 3 + 5\
-3 + 5 = 8\
-guillaume@ubuntu:~$ ./100-my_calculator.py 3 H 5\
-Unknown operator. Available operators: +, -, \* and /
-
+Description:
+Write a program that imports all functions from the file calculator_1.py and handles basic operations.
+Instructions:
+• Usage: ./100-my_calculator.py a operator b
+• If the number of arguments is not 3, your program has to:
+• Print Usage: ./100-my_calculator.py <a> <operator> <b> followed by a new line
+• Exit with the value 1
+• operator can be:
+• + for addition
+• - for subtraction
+• * for multiplication
+• / for division
+• If the operator is not one of the above:
+• Print Unknown operator. Available operators: +, -, * and / followed by a new line
+• Exit with the value 1
+• You can cast a and b into integers by using int() (you can assume that all arguments will be castable into integers)
+• The result should be printed like this: <a> <operator> <b> = <result>, followed by a new line
+Example:
+guillaume@ubuntu:~$ ./100-my_calculator.py 
+Usage: ./100-my_calculator.py <a> <operator> <b>
+guillaume@ubuntu:~$ ./100-my_calculator.py 3 + 5 
+3 + 5 = 8
+guillaume@ubuntu:~$ ./100-my_calculator.py 3 H 5 
+Unknown operator. Available operators: +, -, * and /
 </details>
-
-<details>
-<summary>
