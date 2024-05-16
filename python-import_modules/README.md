@@ -215,11 +215,11 @@ Write a program that imports all functions from the file `calculator_1.py` and h
 
 **Example:**
 
-guillaume@ubuntu:~$ ./100-my_calculator.py
-Usage: ./100-my_calculator.py <a> <operator> <b>
-guillaume@ubuntu:~$ ./100-my_calculator.py 3 + 5
-3 + 5 = 8
-guillaume@ubuntu:~$ ./100-my_calculator.py 3 H 5
+guillaume@ubuntu:~$ ./100-my_calculator.py\
+Usage: ./100-my_calculator.py <a> <operator> <b>\
+guillaume@ubuntu:~$ ./100-my_calculator.py 3 + 5\
+3 + 5 = 8\
+guillaume@ubuntu:~$ ./100-my_calculator.py 3 H 5\
 Unknown operator. Available operators: +, -, \* and /
 
 </details>
