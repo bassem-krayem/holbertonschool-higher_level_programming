@@ -5,7 +5,7 @@
 
 class Square:
     """ a class names square."""
-    
+
     def __init__(self, size):
         """Initialize a new Square instance with a given size.
 
