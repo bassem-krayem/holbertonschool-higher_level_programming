@@ -6,6 +6,11 @@ Using ``add``
 
 >>> add_integer = __import__("0-add_integer").add_integer
 
+>>> add_integer(1e100, 1e100)
+Traceback (most recent call last):
+OverflowError: int too large to convert to float
+
+
 >>> add_integer(1, 2)
 3
 
