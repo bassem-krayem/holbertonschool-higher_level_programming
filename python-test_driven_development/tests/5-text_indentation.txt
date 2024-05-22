@@ -1,0 +1,57 @@
+Module prints a text with 2 new lines after each of these characters: ., ? and :
+================================================================================
+
+Usage:
+------
+
+import funcion from module:
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+test str with three dots:
+>>> text_indentation("""hello. world? with...programming""")
+hello
+world
+with
+<BLANKLINE>
+<BLANKLINE>
+programming
+
+test all str is dots:
+>>> text_indentation("...")
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+
+test ?:
+>>> text_indentation("hello? are you: here")
+hello
+are you
+here
+
+test if not str:
+>>> text_indentation(3)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test text not have any:
+>>> text_indentation("hello world from python")
+hello world from python
+
+test None:
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test empty str:
+>>> text_indentation("")
+<BLANKLINE>
+
+test holberton:
+>>> text_indentation("holberton School")
+holberton School
+
+test holberton:
+>>> text_indentation("holberton.School")
+holberton
+School
