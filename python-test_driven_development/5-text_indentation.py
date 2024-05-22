@@ -1,40 +1,55 @@
 #!/usr/bin/python3
-"""
-Module prints a text with 2 new lines after each of these characters:
-., ?, and :.
-"""
+'''Function that prints a text with 2 new lines
+after each of these characters: ., ? and :
+'''
 
 
 def text_indentation(text):
-    """
-    Prints text with two new lines after each of these characters: ., ?, and :.
+    '''Function that prints a text with 2 new lines
+    after each of these characters: ., ? and :
 
-    Args:
-        text (str): The input text to format.
+    Parameters
+    ----------
+    text: str
+        text to indent
 
-    Raises:
-        TypeError: If the input text is not a string.
+    Raises
+    ------
+    TypeError
+        If text is not a string
 
-    Returns:
-        None
-    """
+     Returns
+    -------
+    None
+    '''
+
     if not isinstance(text, str):
         raise TypeError("text must be a string")
+    if len(text) == 0:
+        raise TypeError("text_indentation() missing \
+            1 required positional argument: 'text'")
 
-    special_characters = ['.', '?', ':']
-    result = ""
     i = 0
-    while i < len(text):
-        result += text[i]
-        if text[i] in special_characters:
-            result += "\n\n"
-            i += 1
-            while i < len(text) and text[i] == ' ':
-                i += 1
-            continue
-        i += 1
+    text_list = []
+    new_string = ""
 
-    print(result.strip())
+    for idx in range(len(text)):
+        new_string += text[idx]
+
+        if text[idx] in "?.:":
+            text_list.append(new_string)
+            new_string = ""
+
+    text_list.append(new_string)
+    new_string = ""
+
+    for i in range(len(text_list)):
+
+        if i != len(text_list) - 1:
+            print(text_list[i].lstrip() + '\n')
+
+        if i == len(text_list) - 1:
+            print(text_list[i].lstrip(), end="")
 
 
 if __name__ == "__main__":
