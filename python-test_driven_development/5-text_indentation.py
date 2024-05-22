@@ -23,12 +23,18 @@ def text_indentation(text):
 
     special_characters = ['.', '?', ':']
     result = ""
-    for char in text:
-        result += char
-        if char in special_characters:
+    i = 0
+    while i < len(text):
+        result += text[i]
+        if text[i] in special_characters:
             result += "\n\n"
+            i += 1
+            while i < len(text) and text[i] == ' ':
+                i += 1
+            continue
+        i += 1
 
-    print("\n".join([line.strip() for line in result.split("\n")]))
+    print(result.strip())
 
 
 if __name__ == "__main__":
