@@ -10,6 +10,7 @@ Functions:
 
 import sys
 import json
+import os
 
 
 def add_from_cmd():
@@ -20,6 +21,31 @@ def add_from_cmd():
         list: A list containing the command-line arguments.
     """
     return sys.argv[1:]
+
+
+def load_from_json_file(filename):
+    """
+    Loads a Python object from a JSON file.
+
+    Args:
+        filename (str): The name of the file to load the object from.
+
+    Returns:
+        Any: The Python object corresponding to the JSON file content.
+
+    Raises:
+        IOError: If an I/O error occurs while reading the file.
+        json.JSONDecodeError: If the file content is not valid JSON.
+    """
+
+    if not os.path.exists(filename):
+        return []
+
+    with open(filename, "r") as file:
+        try:
+            return json.load(file)
+        except json.JSONDecodeError:
+            return []
 
 
 def save_to_json_file(my_obj, filename):
@@ -38,5 +64,8 @@ def save_to_json_file(my_obj, filename):
 
 
 if __name__ == "__main__":
-    my_list = add_from_cmd()
-    save_to_json_file(my_list, "add_item.json")
+    filename = "add_item.json"
+    existed_list = load_from_json_file(filename)
+    new_list = add_from_cmd()
+    updated_list = existed_list + new_list
+    save_to_json_file(updated_list, filename)
