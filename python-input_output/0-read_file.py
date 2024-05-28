@@ -2,5 +2,5 @@
 
 def read_file(filename=""):
     with open(filename, "r") as file:
-            file = file.read()
+        file = file.read()
     print(file, end="")
