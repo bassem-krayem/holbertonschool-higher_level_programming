@@ -24,4 +24,4 @@ def load_from_json_file(filename):
         json.JSONDecodeError: If the file content is not valid JSON.
     """
     with open(filename, "r") as file:
-        return json.loads(file)
+        return json.load(file)
