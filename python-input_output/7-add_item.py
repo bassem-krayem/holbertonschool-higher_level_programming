@@ -59,7 +59,7 @@ def save_to_json_file(my_obj, filename):
     Raises:
         IOError: If an I/O error occurs while writing to the file.
     """
-    with open(filename, "a") as file:
+    with open(filename, "w") as file:
         json.dump(my_obj, file)
 
 
