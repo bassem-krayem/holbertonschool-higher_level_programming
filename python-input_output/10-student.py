@@ -28,12 +28,45 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
+    def to_json(self, attrs=None):
         """
         Returns a dictionary representation of the Student instance.
+        If attrs is a list of strings, only the attributes named in the list
+        are included in the returned dictionary.
+
+        Args:
+            attrs (list, optional): A list of attribute names (strings)
+            to include in the returned dictionary.
+                                     If None, all attributes are included.
 
         Returns:
-            dict: A dictionary containing all the attributes of
+            dict: A dictionary containing the specified attributes of
             the Student instance.
+                  If attrs is None or not a list of strings, all attributes
+                  are included.
         """
+        new_dict = {}
+
+        # If no specific attributes are requested, return the full dictionary
+        if attrs is None:
+            return self.__dict__
+
+        # Check if attrs is a list
+        if isinstance(attrs, list):
+            # Iterate over each element in the list
+            for element in attrs:
+                # Ensure each element is a string
+                if isinstance(element, str):
+                    # Check if the attribute exists in the object's dictionary
+                    if element in self.__dict__:
+                        # Add the attribute to the new dictionary
+                        new_dict[element] = self.__dict__[element]
+                else:
+                    # If any element in the list is not a string,
+                    return the full dictionary
+                    return self.__dict__
+
+            return new_dict
+
+        # If attrs is not a list, return the full dictionary
         return self.__dict__
