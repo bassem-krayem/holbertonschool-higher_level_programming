@@ -60,11 +60,8 @@ class Student:
                         # Add the attribute to the new dictionary
                         new_dict[element] = self.__dict__[element]
                 else:
-                    # If any element in the list is not a string,
-                    return the full dictionary
                     return self.__dict__
 
             return new_dict
 
-        # If attrs is not a list, return the full dictionary
         return self.__dict__
