@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" a module that prints a triangle"""
+
 
 def pascal_triangle(n):
     """
