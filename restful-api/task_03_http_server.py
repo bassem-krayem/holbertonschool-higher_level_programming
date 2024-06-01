@@ -28,7 +28,7 @@ class SimpleHandler(BaseHTTPRequestHandler):
             info = {"version": "1.0", "description": "A simple API built with http.server"}
             self.wfile.write(json.dumps(info).encode("utf-8"))
         else:
-            self.send_error(404, "Undefined endpoint")
+            self.send_error(404, "Endpoint not found")
 
 
 def run(server_class=HTTPServer, handler_class=SimpleHandler, port=8000):
