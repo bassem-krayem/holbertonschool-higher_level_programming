@@ -12,5 +12,4 @@ ALTER TABLE first_table CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode
 ALTER TABLE first_table MODIFY name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- Additionally, convert the 'id' column and set the default collation for the table
-ALTER TABLE first_table MODIFY id INT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE first_table DEFAULT COLLATE = utf8mb4_unicode_ci;
