@@ -11,10 +11,10 @@
 --    - It filters the results to include only cities where the 'state_id' matches the ID of California obtained from the subquery.
 
 SELECT id, name 
-FROM hbtn_0d_usa.cities 
+FROM cities 
 WHERE state_id IN (
     SELECT id 
-    FROM hbtn_0d_usa.states 
+    FROM states 
     WHERE name = "California"
 )
 ORDER BY id ASC;
