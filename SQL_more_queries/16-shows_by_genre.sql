@@ -17,4 +17,4 @@ LEFT JOIN tv_genres
 ON tv_show_genres.genre_id = tv_genres.id  -- Link show-genre pairs to the genre names
 
 -- Order the results by show title first, then by genre name (NULLs will appear last):
-ORDER BY tv_shows.title, tv_genres.name; 
+ORDER BY tv_shows.title ASC, tv_genres.name ASC;
