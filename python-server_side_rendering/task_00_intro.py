@@ -29,13 +29,19 @@ def generate_invitations(template, attendees):
         personalized_invitation = template
 
         # Replace placeholders, handling missing data
-        placeholders = set([word.strip('{}') for word in template.split() if word.startswith('{') and word.endswith('}')])
-        for placeholder in placeholders:
-            if placeholder in attendee:
-                value = attendee[placeholder] if attendee[placeholder] is not None else 'N/A'
+        for key in ["name", "event_title", "event_date", "event_location"]:
+            value = ""
+            to_replace = "{" + key + "}"
+
+            if key not in attendee:
+                value = "N/A"
             else:
-                value = 'N/A'
-            personalized_invitation = personalized_invitation.replace(f'{{{placeholder}}}', value)
+                value = attendee[key]
+
+            if value == "" or value is None:
+                value = "N/A"
+
+            processed_template = processed_template.replace(to_replace, value)
 
         # Generate Output Files (with error handling)
         filename = f"output_{index}.txt"
