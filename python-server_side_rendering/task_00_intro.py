@@ -18,9 +18,11 @@ def generate_invitations(template, attendees):
     # check if template and attendees empty
     if not template:
         print("Error: Template is empty, no output files generated.")
+        return
 
     if not attendees:
         print("Error: No data provided, no output files generated.")
+        return
 
     # Process Each Attendee:
     for index, attendee in enumerate(attendees, start=1):
