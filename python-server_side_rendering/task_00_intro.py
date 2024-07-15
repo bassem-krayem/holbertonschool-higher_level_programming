@@ -25,10 +25,12 @@ def generate_invitations(template, attendees):
         return
 
     # Process Each Attendee:
-    for index, attendee in enumerate(attendees, start=1):
-        personalized_invitation = template
+    i = 1
 
-        # Replace placeholders, handling missing data
+    for attendee in attendees:
+        processed_template = template
+
+        # Replace placeholders in the template
         for key in ["name", "event_title", "event_date", "event_location"]:
             value = ""
             to_replace = "{" + key + "}"
@@ -43,15 +45,9 @@ def generate_invitations(template, attendees):
 
             processed_template = processed_template.replace(to_replace, value)
 
-        # Generate Output Files (with error handling)
-        filename = f"output_{index}.txt"
-        if os.path.exists(filename):  # Check if file exists
-            print(f"Warning: File '{filename}' already exists. Skipping.")
-            continue  # Skip to the next attendee
+        f = open("output_" + str(i) + ".txt", "a")
+        f.write(processed_template)
+        f.close()
 
-        try:
-            with open(filename, "w") as outfile:
-                outfile.write(personalized_invitation)
-                print(f"Output file '{filename}' generated successfully.")
-        except IOError as e:
-            print(f"Error writing output file: {e}")
+        # Increment index counter
+        i += 1
